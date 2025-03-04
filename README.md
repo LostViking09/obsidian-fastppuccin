@@ -8,15 +8,15 @@ FastPpuccin is a streamlined version of the popular AnuPpuccin theme, designed w
 
 ## Features
 
-- High-Performance, the same great look!
-- **Support for [AnuPpuccin Themes Extended](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)**
+- High-Performance, with the same great look!
+- **Support for [AnuPpuccin Themes Extended](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)** (mirror)
 - Core features preserved:
   - Custom checkboxes
   - File icons
   - Colored headings
   - File extension labels alignment
   - Safari-style tabs
-  - Table hover transition effect (from Blue Topaz theme)
+  - Table hover transition effect (from [Blue Topaz](https://github.com/PKM-er/Blue-Topaz_Obsidian-css) theme)
 
 ## Settings
 
@@ -42,10 +42,14 @@ The theme includes essential settings for customization:
 
 This theme is licensed under GPL-3.0, as is the original AnuPpuccin theme.
 
-If you enjoy this theme, consider supporting the original author:
+Blue Topaz is licensed under MIT.
 
-[![Buy Me A Coffee](https://img.shields.io/badge/-buy_me_a_coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/anubisnekhet)
+## Support
 
-If you also want to support me, you can do so here:
+If you enjoy this theme, consider supporting the *original author*:
 
-[![Buy Me A Coffee](https://img.shields.io/badge/-buy_me_a_coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/lostviking09)
+<a href="https://www.buymeacoffee.com/anubisnekhet" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 200px !important;" ></a>
+
+If you also want to *support me*, you can do so here:
+
+<a href="https://www.buymeacoffee.com/lostviking09" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=lostviking09&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
