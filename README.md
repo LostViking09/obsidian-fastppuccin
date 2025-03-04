@@ -48,4 +48,4 @@ If you enjoy this theme, consider supporting the original author:
 
 If you also want to support me, you can do so here:
 
-[![Buy Me A Coffee](https://img.shields.io/badge/-buy_me_a_coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/lostviking09)
+<a href="https://www.buymeacoffee.com/lostviking09"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=lostviking09&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
