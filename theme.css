@@ -49,7 +49,7 @@ settings:
   -
       id: anuppuccin-theme-light
       title: Light Theme Flavor
-      description: Select your preferred light mode flavor
+      description: Extended colorschemes override this setting.
       type: class-select
       allowEmpty: false
       default: ctp-latte
@@ -63,7 +63,7 @@ settings:
   -
       id: anuppuccin-theme-dark
       title: Dark Theme Flavor
-      description: Select your preferred dark mode flavor
+      description: Extended colorschemes override this setting.
       type: class-select
       allowEmpty: false
       default: ctp-mocha
@@ -80,6 +80,13 @@ settings:
       -
           label: Mocha Old
           value: ctp-mocha-old
+  -
+      id: force-theme-accents
+      title: Force Theme Accents
+      description: Force the theme accents to be used.
+      type: class-toggle
+      default: true
+
   -
       id: file-title-color
       title: File Name title color
@@ -138,21 +145,25 @@ settings:
   */
 
   body {
-    caret-color: var(--text-normal) !important;
+    caret-color: var(--text-normal);
     --nav-indentation-guide-color: var(--background-primary);
     --text-normal: rgb(var(--ctp-text));
     --text-muted: rgb(var(--ctp-overlay2));
     --text-accent: rgb(var(--ctp-accent));
     --text-accent-hover: rgb(var(--ctp-accent));
-    --color-accent: rgb(var(--ctp-accent)) !important;
-    --color-accent-1: rgb(var(--ctp-accent)) !important;
-    --color-accent-2: rgb(var(--ctp-accent)) !important;
     --interactive-accent: var(--color-accent);
     --background-primary: rgb(var(--ctp-base));
     --background-secondary: rgb(var(--ctp-mantle));
     --background-modifier-border: rgb(var(--ctp-surface0));
     --ctp-accent: var(--ctp-rosewater);
     --dropdown-background: var(--interactive-normal);
+  }
+
+  /* Force accents */
+  .force-theme-accents{
+    --color-accent: rgb(var(--ctp-accent)) !important;
+    --color-accent-1: rgb(var(--ctp-accent)) !important;
+    --color-accent-2: rgb(var(--ctp-accent)) !important;
   }
 
   .theme-dark,

@@ -27,6 +27,7 @@ Bug reports and feature suggestions are welcome, but keep in mind that I probabl
 - High-Performance, with the same great look!
 - **Support for [AnuPpuccin Themes Extended](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)** ([mirror](extended-colorschemes.css))
 - Core features preserved:
+  - Force theme accents
   - Custom checkboxes
   - File icons
   - Colored headings
@@ -41,6 +42,7 @@ The theme includes essential settings for customization:
 - Light/Dark theme flavor selection
 - File name title color options (Normal, Muted, Accent, H1)
 - Toggle options for:
+  - Force theme accents
   - Custom checkboxes
   - File icons
   - Colored headings
