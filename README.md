@@ -2,9 +2,25 @@
 
 A high-performance clone of the [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin) theme by AnubisNekhet, optimized for speed.
 
+<img src="theme_image.png">
+
 ## About
 
 FastPpuccin is a streamlined version of the popular AnuPpuccin theme, designed with performance in mind. It maintains the beautiful aesthetics of the original while removing most features and configurations to achieve maximum speed.
+
+In my testing, performance is comparable to using the default theme.
+
+This theme supports **[AnuPpuccin Themes Extended](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)** (mirror).
+
+<img src="dev/extended_colorschemes.png">
+
+## But why?
+
+Like probably most of you reading this, I love Obsidian and spend a lot of time tinkering with it (arguably to the detriment of actual work). AnuPpuccin with Nord Dark is my favorite theme; however, for big vaults and complex notes, it can become so slow that even typing is delayed.
+
+After trying out different themes and snippets, and not satisfied with performance, I started to make my own, copying the best features from AnuPpuccin. What started as a snippet evolved into a complete theme with settings and support for [AnuPpuccin Themes Extended](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css) so you can use whatever color scheme you fancy.
+
+Bug reports and feature suggestions are welcome, but keep in mind that I probably won't add features that increase complexity and might hinder performance.
 
 ## Features
 
@@ -35,7 +51,7 @@ The theme includes essential settings for customization:
 
 ## Credits
 
-- Original [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin) theme by AnubisNekhet
+- Original [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin) theme by AnubisNekhet. Almost all code is lifted from AnuPpuccin, with some minor bug fixes and some hard-coded variables that are required for FastPpuccin.
 - Table hover transition from [Blue Topaz](https://github.com/PKM-er/Blue-Topaz_Obsidian-css) theme by PKM-er
 
 ## License
