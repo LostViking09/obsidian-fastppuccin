@@ -60,7 +60,9 @@ The theme includes essential settings for customization:
 
 This theme is licensed under GPL-3.0, as is the original AnuPpuccin theme.
 
-Blue Topaz is licensed under MIT.
+Blue Topaz is licensed under MIT:
+
+Partial style(s) is(are) sourced or adapted from Blue Topaz (https://github.com/PKM-er/Blue-Topaz_Obsidian-css), and I would like to express my appreciation to WhyI (https://github.com/whyt-byte) and pkmer.cn (https://pkmer.cn).
 
 ## Support
 
