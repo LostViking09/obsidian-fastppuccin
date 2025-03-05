@@ -2,7 +2,7 @@
 
 A high-performance clone of the [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin) theme by AnubisNekhet, optimized for speed.
 
-<img src="theme_image.png">
+<img src="theme_image_big.png">
 
 ## About
 
