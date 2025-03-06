@@ -10,7 +10,7 @@ FastPpuccin is a streamlined version of the popular AnuPpuccin theme, designed w
 
 In my testing, performance is comparable to using the default theme.
 
-This theme supports **[AnuPpuccin Themes Extended](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)** ([mirror](extended-colorschemes.css)).
+This theme supports **[AnuPpuccin Themes Extended](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)** ([mirror](snippets/extended-colorschemes.css)).
 
 <img src="dev/extended_colorschemes.png">
 
@@ -25,7 +25,9 @@ Bug reports and feature suggestions are welcome, but keep in mind that I probabl
 ## Features
 
 - High-Performance, with the same great look!
-- **Support for [AnuPpuccin Themes Extended](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)** ([mirror](extended-colorschemes.css))
+- **Support for [AnuPpuccin Themes Extended](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/extended-colorschemes.css)** ([mirror](snippets/extended-colorschemes.css))
+- AnuPpuccin's **Rainbow folders** avaiable as a separate snippet: [Rainbow Folers](snippets/fastppuccin-rainbow-folders.css)
+  - It also supports [Custom Rainbow Colors](https://github.com/AnubisNekhet/AnuPpuccin/blob/main/snippets/custom-rainbow-colors.css) from AnuPpuccin. ([mirror](snippets/custom-rainbow-colors.css))
 - Core features preserved:
   - Force theme accents
   - Custom checkboxes
