@@ -53,6 +53,13 @@ settings:
       type: info-text
       markdown: true
   -
+      id: fastppuccin-colorsettings-header
+      title: Color settings
+      description: Set colorschemes and other color settings.
+      type: heading
+      level: 1
+      collapsed: true
+  -
       id: anuppuccin-theme-light
       title: Light Theme Flavor
       description: Extended colorschemes override this setting.
@@ -112,6 +119,178 @@ settings:
           -
             label: H1
             value: inline-title-h1
+  -
+      id: fastppuccin-decor-header
+      title: Text Decoration
+      description: Set colors for bold, italic, and highlight text decorations.
+      type: heading
+      level: 1
+      collapsed: true
+  -
+      id: anp-decoration-toggle
+      title: Enable Decoration Colors
+      type: class-toggle
+  -
+      id: anp-bold-custom
+      title: Bold Color
+      type: class-select
+      allowEmpty: false
+      default: anp-bold-red
+      options:
+      -
+          label: None
+          value: none
+      -
+          label: Rosewater
+          value: anp-bold-rosewater
+      -
+          label: Flamingo
+          value: anp-bold-flamingo
+      -
+          label: Pink
+          value: anp-bold-pink
+      -
+          label: Mauve
+          value: anp-bold-mauve
+      -
+          label: Red
+          value: anp-bold-red
+      -
+          label: Maroon
+          value: anp-bold-maroon
+      -
+          label: Peach
+          value: anp-bold-peach
+      -
+          label: Yellow
+          value: anp-bold-yellow
+      -
+          label: Green
+          value: anp-bold-green
+      -
+          label: Teal
+          value: anp-bold-teal
+      -
+          label: Sky
+          value: anp-bold-sky
+      -
+          label: Sapphire
+          value: anp-bold-sapphire
+      -
+          label: Blue
+          value: anp-bold-blue
+      -
+          label: Lavender
+          value: anp-bold-lavender
+  -
+      id: anp-italic-custom
+      title: Italic Color
+      type: class-select
+      allowEmpty: false
+      default: anp-italic-green
+      options:
+      -
+          label: None
+          value: none
+      -
+          label: Rosewater
+          value: anp-italic-rosewater
+      -
+          label: Flamingo
+          value: anp-italic-flamingo
+      -
+          label: Pink
+          value: anp-italic-pink
+      -
+          label: Mauve
+          value: anp-italic-mauve
+      -
+          label: Red
+          value: anp-italic-red
+      -
+          label: Maroon
+          value: anp-italic-maroon
+      -
+          label: Peach
+          value: anp-italic-peach
+      -
+          label: Yellow
+          value: anp-italic-yellow
+      -
+          label: Green
+          value: anp-italic-green
+      -
+          label: Teal
+          value: anp-italic-teal
+      -
+          label: Sky
+          value: anp-italic-sky
+      -
+          label: Sapphire
+          value: anp-italic-sapphire
+      -
+          label: Blue
+          value: anp-italic-blue
+      -
+          label: Lavender
+          value: anp-italic-lavender
+  -
+      id: anp-highlight-custom
+      title: Highlight Color
+      type: class-select
+      allowEmpty: false
+      default: anp-highlight-yellow
+      options:
+      -
+          label: Rosewater
+          value: anp-highlight-rosewater
+      -
+          label: Flamingo
+          value: anp-highlight-flamingo
+      -
+          label: Pink
+          value: anp-highlight-pink
+      -
+          label: Mauve
+          value: anp-highlight-mauve
+      -
+          label: Red
+          value: anp-highlight-red
+      -
+          label: Maroon
+          value: anp-highlight-maroon
+      -
+          label: Peach
+          value: anp-highlight-peach
+      -
+          label: Yellow
+          value: anp-highlight-yellow
+      -
+          label: Green
+          value: anp-highlight-green
+      -
+          label: Teal
+          value: anp-highlight-teal
+      -
+          label: Sky
+          value: anp-highlight-sky
+      -
+          label: Sapphire
+          value: anp-highlight-sapphire
+      -
+          label: Blue
+          value: anp-highlight-blue
+      -
+          label: Lavender
+          value: anp-highlight-lavender
+  -
+      id: fastppuccin-features-header
+      title: Features
+      description: Enable or disable features.
+      type: heading
+      level: 1
+      collapsed: true
+  
   -
       id: anp-custom-checkboxes
       title: Custom Checkboxes
@@ -344,6 +523,184 @@ settings:
     --h5-color: rgb(var(--ctp-lavender));
     --h6-color: rgb(var(--ctp-mauve));
   }
+
+
+/*------------------ Text decoration colors -------------------*/
+
+/*-Decorations for bold and italics-*/
+.anp-decoration-toggle {
+  --italic-color: rgb(var(--anp-italic-color, var(--text-normal)));
+  --bold-color: rgb(var(--anp-bold-color, var(--text-normal)));
+  --text-highlight-bg: rgba(var(--anp-highlight-color, var(--ctp-yellow)), 0.2);
+}
+
+.anp-bold-rosewater {
+  --anp-bold-color: var(--ctp-rosewater);
+}
+
+.anp-italic-rosewater {
+  --anp-italic-color: var(--ctp-rosewater);
+}
+
+.anp-highlight-rosewater {
+  --anp-highlight-color: var(--ctp-rosewater);
+}
+
+.anp-bold-flamingo {
+  --anp-bold-color: var(--ctp-flamingo);
+}
+
+.anp-italic-flamingo {
+  --anp-italic-color: var(--ctp-flamingo);
+}
+
+.anp-highlight-flamingo {
+  --anp-highlight-color: var(--ctp-flamingo);
+}
+
+.anp-bold-pink {
+  --anp-bold-color: var(--ctp-pink);
+}
+
+.anp-italic-pink {
+  --anp-italic-color: var(--ctp-pink);
+}
+
+.anp-highlight-pink {
+  --anp-highlight-color: var(--ctp-pink);
+}
+
+.anp-bold-mauve {
+  --anp-bold-color: var(--ctp-mauve);
+}
+
+.anp-italic-mauve {
+  --anp-italic-color: var(--ctp-mauve);
+}
+
+.anp-highlight-mauve {
+  --anp-highlight-color: var(--ctp-mauve);
+}
+
+.anp-bold-red {
+  --anp-bold-color: var(--ctp-red);
+}
+
+.anp-italic-red {
+  --anp-italic-color: var(--ctp-red);
+}
+
+.anp-highlight-red {
+  --anp-highlight-color: var(--ctp-red);
+}
+
+.anp-bold-maroon {
+  --anp-bold-color: var(--ctp-maroon);
+}
+
+.anp-italic-maroon {
+  --anp-italic-color: var(--ctp-maroon);
+}
+
+.anp-highlight-maroon {
+  --anp-highlight-color: var(--ctp-maroon);
+}
+
+.anp-bold-peach {
+  --anp-bold-color: var(--ctp-peach);
+}
+
+.anp-italic-peach {
+  --anp-italic-color: var(--ctp-peach);
+}
+
+.anp-highlight-peach {
+  --anp-highlight-color: var(--ctp-peach);
+}
+
+.anp-bold-yellow {
+  --anp-bold-color: var(--ctp-yellow);
+}
+
+.anp-italic-yellow {
+  --anp-italic-color: var(--ctp-yellow);
+}
+
+.anp-highlight-yellow {
+  --anp-highlight-color: var(--ctp-yellow);
+}
+
+.anp-bold-green {
+  --anp-bold-color: var(--ctp-green);
+}
+
+.anp-italic-green {
+  --anp-italic-color: var(--ctp-green);
+}
+
+.anp-highlight-green {
+  --anp-highlight-color: var(--ctp-green);
+}
+
+.anp-bold-teal {
+  --anp-bold-color: var(--ctp-teal);
+}
+
+.anp-italic-teal {
+  --anp-italic-color: var(--ctp-teal);
+}
+
+.anp-highlight-teal {
+  --anp-highlight-color: var(--ctp-teal);
+}
+
+.anp-bold-sky {
+  --anp-bold-color: var(--ctp-sky);
+}
+
+.anp-italic-sky {
+  --anp-italic-color: var(--ctp-sky);
+}
+
+.anp-highlight-sky {
+  --anp-highlight-color: var(--ctp-sky);
+}
+
+.anp-bold-sapphire {
+  --anp-bold-color: var(--ctp-sapphire);
+}
+
+.anp-italic-sapphire {
+  --anp-italic-color: var(--ctp-sapphire);
+}
+
+.anp-highlight-sapphire {
+  --anp-highlight-color: var(--ctp-sapphire);
+}
+
+.anp-bold-blue {
+  --anp-bold-color: var(--ctp-blue);
+}
+
+.anp-italic-blue {
+  --anp-italic-color: var(--ctp-blue);
+}
+
+.anp-highlight-blue {
+  --anp-highlight-color: var(--ctp-blue);
+}
+
+.anp-bold-lavender {
+  --anp-bold-color: var(--ctp-lavender);
+}
+
+.anp-italic-lavender {
+  --anp-italic-color: var(--ctp-lavender);
+}
+
+.anp-highlight-lavender {
+  --anp-highlight-color: var(--ctp-lavender);
+}
 
   /*------------------Defining Colorschemes-------------------*/
   .theme-light.ctp-latte,
