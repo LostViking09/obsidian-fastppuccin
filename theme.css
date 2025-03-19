@@ -120,6 +120,12 @@ settings:
             label: H1
             value: inline-title-h1
   -
+      id: callout-title-force-default
+      title: Force Default Callout Title Color
+      description: Useful if the title is unreadable.
+      type: class-toggle
+      default: false
+  -
       id: fastppuccin-decor-header
       title: Text Decoration
       description: Set colors for bold, italic, and highlight text decorations.
@@ -351,6 +357,11 @@ settings:
     --color-accent-2: rgb(var(--ctp-accent)) !important;
   }
 
+  /* Force default callout title color */
+  .callout-title-force-default{
+    --callout-title-color: var(--text-normal);
+  }
+
   .theme-dark,
   .theme-light {
     --mono-rgb-0: var(--ctp-crust);
@@ -472,6 +483,8 @@ settings:
   [data-id=anp-custom-rainbow-colors],) .setting-item-name {
     color: rgb(var(--ctp-mauve));
   }
+
+
 
   body {
     --anp-rainbow-folder-bg-opacity: 1;
