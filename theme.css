@@ -442,8 +442,8 @@ settings:
     --ctp-accent: var(--ctp-rosewater);
     --dropdown-background: var(--interactive-normal);
     --color-accent: rgb(var(--ctp-accent)) !important;
-    --color-accent-1: rgb(var(--ctp-accent)) !important;
-    --color-accent-2: rgb(var(--ctp-accent)) !important;
+    --color-accent-1: rgb(var(--ctp-accent));
+    --color-accent-2: rgb(var(--ctp-accent));
   }
 
   /* Force default callout title color */
