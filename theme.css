@@ -94,12 +94,105 @@ settings:
           label: Mocha Old
           value: ctp-mocha-old
   -
-      id: force-theme-accents
-      title: Force Theme Accents
-      description: Force the theme accents to be used.
-      type: class-toggle
-      default: true
-
+      id: anuppuccin-light-theme-accents
+      title: Custom Light Theme Accent
+      description: Select your preferred light theme accent (Defaults to dark theme accent if left empty)
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+      -
+          label: Rosewater
+          value: ctp-accent-light-rosewater
+      -
+          label: Flamingo
+          value: ctp-accent-light-flamingo
+      -
+          label: Pink
+          value: ctp-accent-light-pink
+      -
+          label: Mauve
+          value: ctp-accent-light-mauve
+      -
+          label: Red
+          value: ctp-accent-light-red
+      -
+          label: Maroon
+          value: ctp-accent-light-maroon
+      -
+          label: Peach
+          value: ctp-accent-light-peach
+      -
+          label: Yellow
+          value: ctp-accent-light-yellow
+      -
+          label: Green
+          value: ctp-accent-light-green
+      -
+          label: Teal
+          value: ctp-accent-light-teal
+      -
+          label: Sky
+          value: ctp-accent-light-sky
+      -
+          label: Sapphire
+          value: ctp-accent-light-sapphire
+      -
+          label: Blue
+          value: ctp-accent-light-blue
+      -
+          label: Lavender
+          value: ctp-accent-light-lavender
+  -
+      id: anuppuccin-theme-accents
+      title: Custom Dark Theme Accent
+      description: Select your preferred accent color from the palette (Empty means theme default)
+      type: class-select
+      allowEmpty: true
+      default: none
+      options:
+      -
+          label: Rosewater
+          value: ctp-accent-rosewater
+      -
+          label: Flamingo
+          value: ctp-accent-flamingo
+      -
+          label: Pink
+          value: ctp-accent-pink
+      -
+          label: Mauve
+          value: ctp-accent-mauve
+      -
+          label: Red
+          value: ctp-accent-red
+      -
+          label: Maroon
+          value: ctp-accent-maroon
+      -
+          label: Peach
+          value: ctp-accent-peach
+      -
+          label: Yellow
+          value: ctp-accent-yellow
+      -
+          label: Green
+          value: ctp-accent-green
+      -
+          label: Teal
+          value: ctp-accent-teal
+      -
+          label: Sky
+          value: ctp-accent-sky
+      -
+          label: Sapphire
+          value: ctp-accent-sapphire
+      -
+          label: Blue
+          value: ctp-accent-blue
+      -
+          label: Lavender
+          value: ctp-accent-lavender
   -
       id: file-title-color
       title: File Name title color
@@ -348,10 +441,6 @@ settings:
     --background-modifier-border: rgb(var(--ctp-surface0));
     --ctp-accent: var(--ctp-rosewater);
     --dropdown-background: var(--interactive-normal);
-  }
-
-  /* Force accents */
-  .force-theme-accents{
     --color-accent: rgb(var(--ctp-accent)) !important;
     --color-accent-1: rgb(var(--ctp-accent)) !important;
     --color-accent-2: rgb(var(--ctp-accent)) !important;
@@ -537,10 +626,291 @@ settings:
     --h6-color: rgb(var(--ctp-mauve));
   }
 
+/*------------------ Custom Accents -------------------*/
+.ctp-accent-rosewater {
+  --ctp-accent: var(--ctp-rosewater) !important;
+}
+
+.theme-light.ctp-accent-light-rosewater {
+  --ctp-accent: var(--ctp-rosewater) !important;
+}
+
+.anp-bold-rosewater {
+  --anp-bold-color: var(--ctp-rosewater);
+}
+
+.anp-italic-rosewater {
+  --anp-italic-color: var(--ctp-rosewater);
+}
+
+.anp-highlight-rosewater {
+  --anp-highlight-color: var(--ctp-rosewater);
+}
+
+.ctp-accent-flamingo {
+  --ctp-accent: var(--ctp-flamingo) !important;
+}
+
+.theme-light.ctp-accent-light-flamingo {
+  --ctp-accent: var(--ctp-flamingo) !important;
+}
+
+.anp-bold-flamingo {
+  --anp-bold-color: var(--ctp-flamingo);
+}
+
+.anp-italic-flamingo {
+  --anp-italic-color: var(--ctp-flamingo);
+}
+
+.anp-highlight-flamingo {
+  --anp-highlight-color: var(--ctp-flamingo);
+}
+
+.ctp-accent-pink {
+  --ctp-accent: var(--ctp-pink) !important;
+}
+
+.theme-light.ctp-accent-light-pink {
+  --ctp-accent: var(--ctp-pink) !important;
+}
+
+.anp-bold-pink {
+  --anp-bold-color: var(--ctp-pink);
+}
+
+.anp-italic-pink {
+  --anp-italic-color: var(--ctp-pink);
+}
+
+.anp-highlight-pink {
+  --anp-highlight-color: var(--ctp-pink);
+}
+
+.ctp-accent-mauve {
+  --ctp-accent: var(--ctp-mauve) !important;
+}
+
+.theme-light.ctp-accent-light-mauve {
+  --ctp-accent: var(--ctp-mauve) !important;
+}
+
+.anp-bold-mauve {
+  --anp-bold-color: var(--ctp-mauve);
+}
+
+.anp-italic-mauve {
+  --anp-italic-color: var(--ctp-mauve);
+}
+
+.anp-highlight-mauve {
+  --anp-highlight-color: var(--ctp-mauve);
+}
+
+.ctp-accent-red {
+  --ctp-accent: var(--ctp-red) !important;
+}
+
+.theme-light.ctp-accent-light-red {
+  --ctp-accent: var(--ctp-red) !important;
+}
+
+.anp-bold-red {
+  --anp-bold-color: var(--ctp-red);
+}
+
+.anp-italic-red {
+  --anp-italic-color: var(--ctp-red);
+}
+
+.anp-highlight-red {
+  --anp-highlight-color: var(--ctp-red);
+}
+
+.ctp-accent-maroon {
+  --ctp-accent: var(--ctp-maroon) !important;
+}
+
+.theme-light.ctp-accent-light-maroon {
+  --ctp-accent: var(--ctp-maroon) !important;
+}
+
+.anp-bold-maroon {
+  --anp-bold-color: var(--ctp-maroon);
+}
+
+.anp-italic-maroon {
+  --anp-italic-color: var(--ctp-maroon);
+}
+
+.anp-highlight-maroon {
+  --anp-highlight-color: var(--ctp-maroon);
+}
+
+.ctp-accent-peach {
+  --ctp-accent: var(--ctp-peach) !important;
+}
+
+.theme-light.ctp-accent-light-peach {
+  --ctp-accent: var(--ctp-peach) !important;
+}
+
+.anp-bold-peach {
+  --anp-bold-color: var(--ctp-peach);
+}
+
+.anp-italic-peach {
+  --anp-italic-color: var(--ctp-peach);
+}
+
+.anp-highlight-peach {
+  --anp-highlight-color: var(--ctp-peach);
+}
+
+.ctp-accent-yellow {
+  --ctp-accent: var(--ctp-yellow) !important;
+}
+
+.theme-light.ctp-accent-light-yellow {
+  --ctp-accent: var(--ctp-yellow) !important;
+}
+
+.anp-bold-yellow {
+  --anp-bold-color: var(--ctp-yellow);
+}
+
+.anp-italic-yellow {
+  --anp-italic-color: var(--ctp-yellow);
+}
+
+.anp-highlight-yellow {
+  --anp-highlight-color: var(--ctp-yellow);
+}
+
+.ctp-accent-green {
+  --ctp-accent: var(--ctp-green) !important;
+}
+
+.theme-light.ctp-accent-light-green {
+  --ctp-accent: var(--ctp-green) !important;
+}
+
+.anp-bold-green {
+  --anp-bold-color: var(--ctp-green);
+}
+
+.anp-italic-green {
+  --anp-italic-color: var(--ctp-green);
+}
+
+.anp-highlight-green {
+  --anp-highlight-color: var(--ctp-green);
+}
+
+.ctp-accent-teal {
+  --ctp-accent: var(--ctp-teal) !important;
+}
+
+.theme-light.ctp-accent-light-teal {
+  --ctp-accent: var(--ctp-teal) !important;
+}
+
+.anp-bold-teal {
+  --anp-bold-color: var(--ctp-teal);
+}
+
+.anp-italic-teal {
+  --anp-italic-color: var(--ctp-teal);
+}
+
+.anp-highlight-teal {
+  --anp-highlight-color: var(--ctp-teal);
+}
+
+.ctp-accent-sky {
+  --ctp-accent: var(--ctp-sky) !important;
+}
+
+.theme-light.ctp-accent-light-sky {
+  --ctp-accent: var(--ctp-sky) !important;
+}
+
+.anp-bold-sky {
+  --anp-bold-color: var(--ctp-sky);
+}
+
+.anp-italic-sky {
+  --anp-italic-color: var(--ctp-sky);
+}
+
+.anp-highlight-sky {
+  --anp-highlight-color: var(--ctp-sky);
+}
+
+.ctp-accent-sapphire {
+  --ctp-accent: var(--ctp-sapphire) !important;
+}
+
+.theme-light.ctp-accent-light-sapphire {
+  --ctp-accent: var(--ctp-sapphire) !important;
+}
+
+.anp-bold-sapphire {
+  --anp-bold-color: var(--ctp-sapphire);
+}
+
+.anp-italic-sapphire {
+  --anp-italic-color: var(--ctp-sapphire);
+}
+
+.anp-highlight-sapphire {
+  --anp-highlight-color: var(--ctp-sapphire);
+}
+
+.ctp-accent-blue {
+  --ctp-accent: var(--ctp-blue) !important;
+}
+
+.theme-light.ctp-accent-light-blue {
+  --ctp-accent: var(--ctp-blue) !important;
+}
+
+.anp-bold-blue {
+  --anp-bold-color: var(--ctp-blue);
+}
+
+.anp-italic-blue {
+  --anp-italic-color: var(--ctp-blue);
+}
+
+.anp-highlight-blue {
+  --anp-highlight-color: var(--ctp-blue);
+}
+
+.ctp-accent-lavender {
+  --ctp-accent: var(--ctp-lavender) !important;
+}
+
+.theme-light.ctp-accent-light-lavender {
+  --ctp-accent: var(--ctp-lavender) !important;
+}
+
+.anp-bold-lavender {
+  --anp-bold-color: var(--ctp-lavender);
+}
+
+.anp-italic-lavender {
+  --anp-italic-color: var(--ctp-lavender);
+}
+
+.anp-highlight-lavender {
+  --anp-highlight-color: var(--ctp-lavender);
+}
+
 
 /*------------------ Text decoration colors -------------------*/
 
-/*-Decorations for bold and italics-*/
+/*-Decorations for bold and italics-
 .anp-decoration-toggle {
   --italic-color: rgb(var(--anp-italic-color, var(--text-normal)));
   --bold-color: rgb(var(--anp-bold-color, var(--text-normal)));
@@ -713,7 +1083,7 @@ settings:
 
 .anp-highlight-lavender {
   --anp-highlight-color: var(--ctp-lavender);
-}
+} */
 
   /*------------------Defining Colorschemes-------------------*/
   .theme-light.ctp-latte,
