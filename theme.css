@@ -428,7 +428,7 @@ settings:
   -
   */
 
-  body {
+  body, .theme-dark, .theme-light {
     caret-color: var(--text-normal);
     --nav-indentation-guide-color: var(--background-primary);
     --text-normal: rgb(var(--ctp-text));
@@ -442,8 +442,8 @@ settings:
     --ctp-accent: var(--ctp-rosewater);
     --dropdown-background: var(--interactive-normal);
     --color-accent: rgb(var(--ctp-accent)) !important;
-    --color-accent-1: rgb(var(--ctp-accent));
-    --color-accent-2: rgb(var(--ctp-accent));
+    --color-accent-1: rgb(var(--ctp-accent) !important);
+    --color-accent-2: rgb(var(--ctp-accent) !important);
   }
 
   /* Force default callout title color */
