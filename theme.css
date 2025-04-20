@@ -94,6 +94,44 @@ settings:
           label: Mocha Old
           value: ctp-mocha-old
   -
+      id: file-title-color
+      title: File Name title color
+      type: class-select
+      allowEmpty: false
+      default: inline-title-normal
+      options:
+          -
+            label: Normal
+            value: inline-title-normal
+          -
+            label: Muted
+            value: inline-title-muted
+          -
+            label: Accent
+            value: inline-title-accent
+          -
+            label: H1
+            value: inline-title-h1
+  -
+      id: callout-title-force-default
+      title: Force Default Callout Title Color
+      description: Useful if the title is unreadable.
+      type: class-toggle
+      default: false
+  -
+      id: fastppuccin-accent-settings-header
+      title: Accent settings
+      description: Set accent colors for the theme.
+      type: heading
+      level: 1
+      collapsed: true
+  -
+      id: fastppuccin-accent-toggle
+      title: Enable accent handling
+      description: Enable theme accent handling (instead of Obsidian's default).
+      type: class-toggle
+      default: true
+  -
       id: anuppuccin-light-theme-accents
       title: Custom Light Theme Accent
       description: Select your preferred light theme accent (Defaults to dark theme accent if left empty)
@@ -193,31 +231,6 @@ settings:
       -
           label: Lavender
           value: ctp-accent-lavender
-  -
-      id: file-title-color
-      title: File Name title color
-      type: class-select
-      allowEmpty: false
-      default: inline-title-normal
-      options:
-          -
-            label: Normal
-            value: inline-title-normal
-          -
-            label: Muted
-            value: inline-title-muted
-          -
-            label: Accent
-            value: inline-title-accent
-          -
-            label: H1
-            value: inline-title-h1
-  -
-      id: callout-title-force-default
-      title: Force Default Callout Title Color
-      description: Useful if the title is unreadable.
-      type: class-toggle
-      default: false
   -
       id: fastppuccin-decor-header
       title: Text Decoration
@@ -433,18 +446,50 @@ settings:
     --nav-indentation-guide-color: var(--background-primary);
     --text-normal: rgb(var(--ctp-text));
     --text-muted: rgb(var(--ctp-overlay2));
-    --text-accent: rgb(var(--ctp-accent));
+    /* --text-accent: rgb(var(--ctp-accent));
     --text-accent-hover: rgb(var(--ctp-accent));
-    --interactive-accent: var(--color-accent);
+    --interactive-accent: var(--color-accent); */
     --background-primary: rgb(var(--ctp-base));
     --background-secondary: rgb(var(--ctp-mantle));
     --background-modifier-border: rgb(var(--ctp-surface0));
     --ctp-accent: var(--ctp-rosewater);
     --dropdown-background: var(--interactive-normal);
-    --color-accent: rgb(var(--ctp-accent)) !important;
+    /* --color-accent: rgb(var(--ctp-accent)) !important;
     --color-accent-1: rgb(var(--ctp-accent) !important);
-    --color-accent-2: rgb(var(--ctp-accent) !important);
+    --color-accent-2: rgb(var(--ctp-accent) !important); */
   }
+
+/* Toggle accent editing */
+.fastppuccin-accent-toggle {
+  --color-accent: rgb(var(--ctp-accent));
+  --color-accent-1: rgb(var(--ctp-accent));
+  --color-accent-2: rgba(var(--ctp-accent), 0.9);
+  --text-selection: rgba(var(--ctp-accent), 0.25);
+  --interactive-accent: rgb(var(--ctp-accent));
+  --interactive-accent-hover: rgba(var(--ctp-accent), 0.9);
+  --text-accent: rgb(var(--ctp-accent));
+  --text-accent-hover: rgb(var(--ctp-accent));
+  --text-highlight-bg: rgba(var(--ctp-accent), 0.4);
+  --text-highlight-bg-active: rgba(var(--ctp-accent), 0.6);
+  --interactive-accent: rgb(var(--ctp-accent));
+  --interactive-accent-rgb: var(--ctp-accent);
+  --blockquote-border-color: rgb(var(--ctp-accent));
+  --background-modifier-active: rgba(var(--ctp-accent), 0.1);
+  --background-modifier-active-hover: rgba(var(--ctp-accent), 0.15);
+  --link-unresolved-decoration-color: rgba(var(--ctp-accent), 0.3);
+  --tag-background: rgba(var(--ctp-accent), 0.1);
+  --tag-background-hover: rgba(var(--ctp-accent), 0.2);
+  --tag-border-color: rgba(var(--ctp-accent), 0.15);
+  --tag-border-color-hover: rgba(var(--ctp-accent), 0.15);
+  --nav-item-background-selected: rgba(var(--ctp-accent), 0.2);
+  --heading-formatting: rgb(var(--ctp-accent));
+  --icon-color-focused: rgb(var(--ctp-accent));
+}
+
+/* Fix preview font weight */
+.markdown-preview-view {
+    font-weight: var(--anp-font-preview-wt, normal);
+}
 
   /* Force default callout title color */
   .callout-title-force-default{
