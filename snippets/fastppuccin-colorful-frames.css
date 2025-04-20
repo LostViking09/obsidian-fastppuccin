@@ -1,0 +1,270 @@
+/*===============================================================
+                    FastPpuccin Colorful Frames Snippet
+                            -----------
+                    Adopted from AnuPpuccin and Minimal themes
+                          by SublimePeace
+                    (https://github.com/SublimePeace)
+
+  This snippet lets you add a colorful frame to the top of your Obsidian window.
+  Customizable via the StyleSettings plugin.
+  Inspired by https://minimal.guide/features/colorful-frame
+
+  This snippet is licensed under the GPL-3.0.
+
+  *===============================================================*/
+
+
+/* @settings
+
+name: FastPpuccin Colorful Frame
+id: fastppuccin-colorful-frame-settings
+settings:
+    - 
+        id: about-info-text-fpp-colorful-frames
+        title: About this snippet 
+        description: "This is a high-performance remake of the Colorful Frames feature from the AnuPpuccin and Minimal themes, designed to be used with the [FastPpuccin](https://github.com/LostViking09/obsidian-fastppuccin) theme. Made by [SublimePeace](https://github.com/SublimePeace)"
+        type: info-text
+        markdown: true
+    -
+        id: fpp-colorful-frame
+        title: Enable Colorful Frame
+        type: class-toggle 
+    -
+        id: fpp-colorful-frame-color
+        title: Custom Colorful Frame Color
+        type: variable-themed-color
+        opacity: false
+        format: rgb-values
+        default-light: '#2a6ef5'
+        default-dark: '#f38ba8'
+    -
+        id: fpp-colorful-frame-opacity
+        title: Colorful Frame Opacity
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 1
+        step: 0.05
+    -
+        id: fpp-colorful-frame-icon-toggle-light
+        title: Invert Icon Colors - Light Mode
+        type: class-toggle 
+    -
+        id: fpp-colorful-frame-icon-toggle-dark
+        title: Invert Icon Colors - Dark Mode
+        type: class-toggle 
+*/
+
+body {
+    --colorful-icon-color: var(--background-secondary);
+    --colorful-icon-color-alt: var(--background-secondary-alt);
+    --colorful-frame-color: rgba(var(--fpp-colorful-frame-color, var(--ctp-accent)), var(--fpp-colorful-frame-opacity, 1));
+}
+
+/* change icon and text color  when invert icons setting is turned on */
+body.fpp-colorful-frame-icon-toggle-light.theme-light,
+body.fpp-colorful-frame-icon-toggle-dark.theme-dark {
+    --colorful-icon-color: var(--text-normal);
+    --colorful-icon-color-alt: var(--text-muted);
+}
+
+.fpp-colorful-frame {
+    --titlebar-background: var(--fpp-colorful-frame-color, var(--color-accent));
+    --titlebar-background-focused: var(--fpp-colorful-frame-color, var(--color-accent));
+    --titlebar-text-color: var(--background-primary);
+    --titlebar-text-color-focused: var(--background-secondary-alt);
+}
+
+/* left and right sidebar toggle buttons */
+.fpp-colorful-frame .sidebar-toggle-button {
+    padding: var(--size-4-1) !important;
+    background-color: var(--background-primary);
+    --tab-container-background: var(--background-primary) !important;
+    height: calc(var(--header-height) - 5px);
+    margin-right: 0;
+    border-radius: 0 0 var(--radius-m) var(--radius-m);
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: var(--tab-outline-color);
+    --icon-color: var(--text-muted);
+    --icon-color-hover: var(--text-muted);
+    --icon-color-active: var(--text-accent);
+    --icon-color-focused: var(--text-normal);
+}
+
+.fpp-colorful-frame .sidebar-toggle-button .clickable-icon {
+    --icon-color: var(--text-muted) !important;
+    --icon-color-hover: var(--text-muted) !important;
+    --icon-color-active: var(--text-accent) !important;
+    --icon-color-focused: var(--text-normal) !important;
+}
+
+/* right sidebar top bar -> tab header background when hovering a non-active tab */
+.fpp-colorful-frame .workspace-split.mod-left-split .workspace-tabs.mod-top .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
+.fpp-colorful-frame .workspace-split.mod-right-split .workspace-tabs.mod-top .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+    background-color: rgba(var(--ctp-crust), 0.2);
+}
+
+.fpp-colorful-frame.is-frameless.is-frameless:not(.is-hidden-frameless) .sidebar-toggle-button.mod-left {
+    border-radius: 0 var(--radius-m) var(--radius-m) 0;
+}
+
+/* THE KEY - THIS SETS THE FRAME COLOR */
+.fpp-colorful-frame .mod-top .workspace-tab-header-container,
+.fpp-colorful-frame .workspace-ribbon.mod-left:before {
+    --tab-container-background: rgba(var(--fpp-colorful-frame-color, var(--ctp-accent)), var(--fpp-colorful-frame-opacity, 1));
+    --titlebar-background: rgba(var(--fpp-colorful-frame-color, var(--ctp-accent)), var(--fpp-colorful-frame-opacity, 1));
+}
+
+.fpp-colorful-frame .prompt {
+    --background-modifier-hover: rgba(var(--ctp-text), 0.075);
+}
+
+
+.fpp-colorful-frame .sidebar-toggle-button {
+    --background-modifier-hover: rgba(var(--ctp-text), 0.075);
+}
+
+.fpp-colorful-frame.is-focused .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner .workspace-tab-header-inner-title,
+.fpp-colorful-frame.is-focused .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner .workspace-tab-header-inner-close-button {
+    color: var(--text-muted);
+}
+
+.fpp-colorful-frame .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner .workspace-tab-header-inner-close-button {
+    color: var(--text-muted);
+}
+
+.fpp-colorful-frame.is-focused .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active .workspace-tab-header-inner .workspace-tab-header-inner-title,
+.fpp-colorful-frame.is-focused .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header.is-active .workspace-tab-header-inner .workspace-tab-header-inner-close-button {
+    color: var(--color-accent);
+}
+
+/* Sets icons, tab text  */
+.fpp-colorful-frame .mod-top:not(.mod-stacked) .workspace-tab-header,
+.fpp-colorful-frame .mod-top:not(.mod-stacked) .workspace-tab-header.is-active,
+.fpp-colorful-frame .mod-top:not(.mod-stacked) .workspace-tab-header-container,
+.fpp-colorful-frame.is-focused .mod-top:not(.mod-stacked) .workspace-tab-header,
+.fpp-colorful-frame.is-focused .mod-top:not(.mod-stacked) .workspace-tab-header.is-active,
+.fpp-colorful-frame.is-focused .mod-top:not(.mod-stacked) .workspace-tab-header-container {
+    --tab-text-color: var(--colorful-icon-color-alt);
+    --icon-color: var(--colorful-icon-color-alt);
+    --icon-color-hover: var(--colorful-icon-color);
+    --tab-text-color-focused: var(--colorful-icon-color-alt);
+}
+
+.fpp-colorful-frame .mod-top.mod-stacked .workspace-tab-header-new-tab .clickable-icon,
+.fpp-colorful-frame.is-focused .mod-top.mod-stacked .workspace-tab-header-new-tab .clickable-icon {
+    --icon-color: var(--colorful-icon-color-alt);
+    --icon-color-hover: var(--colorful-icon-color);
+}
+
+/* icon colors */
+.fpp-colorful-frame .mod-top .workspace-tab-header-tab-list .clickable-icon,
+.fpp-colorful-frame .mod-top .workspace-tab-header-tab-list .clickable-icon:hover,
+.fpp-colorful-frame .mod-top .workspace-tab-header-new-tab .clickable-icon,
+.fpp-colorful-frame .mod-top .workspace-tab-header-new-tab .clickable-icon:hover,
+.fpp-colorful-frame.is-focused .mod-top .workspace-tab-header-tab-list .clickable-icon,
+.fpp-colorful-frame.is-focused .mod-top .workspace-tab-header-tab-list .clickable-icon:hover,
+.fpp-colorful-frame.is-focused .mod-top .workspace-tab-header-new-tab .clickable-icon,
+.fpp-colorful-frame.is-focused .mod-top .workspace-tab-header-new-tab .clickable-icon:hover {
+    color: var(--colorful-icon-color-alt);
+}
+
+/* icon colors for focused icons*/
+.fpp-colorful-frame .mod-right-split .mod-top .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.fpp-colorful-frame .mod-left-split .mod-top .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.fpp-colorful-frame .mod-top .workspace-tab-header-container .clickable-icon.has-active-menu,
+.fpp-colorful-frame .mod-top .workspace-tab-header-container .clickable-icon:active {
+    --icon-color-focused: var(--colorful-icon-color-alt);
+}
+
+/* colors for inactive note tab title and X button */
+.fpp-colorful-frame .workspace-tab-header,
+.fpp-colorful-frame .workspace-tab-header .workspace-tab-header-inner-close-button {
+    --tab-text-color-focused: var(--colorful-icon-color-alt);
+    --tab-text-color-focused-active-current: var(--colorful-icon-color-alt);
+}
+
+/* colors for active note tab title and X button */
+.fpp-colorful-frame .workspace-tab-header.is-active,
+.fpp-colorful-frame .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
+    --tab-text-color-focused: var(--text-faint);
+    --tab-text-color-focused-active-current: var(--text-normal);
+}
+
+/* background color for active icons in left sidebar */
+.fpp-colorful-frame .mod-left-split .mod-top .workspace-tab-header.is-active,
+.fpp-colorful-frame .mod-right-split .mod-top .workspace-tab-header.is-active {
+    background-color: rgba(var(--ctp-crust), 0.2);
+}
+
+/* background color for active+hovered icons in left sidebar */
+.fpp-colorful-frame .mod-left-split .mod-top .workspace-tab-header.is-active:hover,
+.fpp-colorful-frame .mod-right-split .mod-top .workspace-tab-header.is-active:hover {
+    background-color: rgba(var(--ctp-crust), 0.3);
+}
+
+/* inverted color setting for left and right sidebar focused tabs */
+.fpp-colorful-frame.fpp-colorful-frame-icon-toggle-light.theme-light .mod-left-split .mod-top .workspace-tab-header.is-active,
+.fpp-colorful-frame.fpp-colorful-frame-icon-toggle-light.theme-light .mod-right-split .mod-top .workspace-tab-header.is-active,
+.fpp-colorful-frame.fpp-colorful-frame-icon-toggle-dark.theme-dark .mod-left-split .mod-top .workspace-tab-header.is-active,
+.fpp-colorful-frame.fpp-colorful-frame-icon-toggle-dark.theme-dark .mod-right-split .mod-top .workspace-tab-header.is-active {
+    background-color: rgba(var(--ctp-text), 0.3);
+}
+
+/* focused note's icon color in the tab ear */
+.fpp-colorful-frame.is-focused .mod-active:not(.mod-stacked).mod-top .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.fpp-colorful-frame .mod-left-split .mod-top .workspace-tab-header:active .workspace-tab-header-inner-icon,
+.fpp-colorful-frame .mod-right-split .mod-top .workspace-tab-header:active .workspace-tab-header-inner-icon {
+    color: var(--colorful-icon-color-alt);
+}
+
+/* set left and right sidebar resize handles to terminate at the header */
+.fpp-colorful-frame .workspace-split.mod-vertical>*>.workspace-leaf-resize-handle,
+.fpp-colorful-frame .workspace-split.mod-left-split>.workspace-leaf-resize-handle,
+.fpp-colorful-frame .workspace-split.mod-right-split>.workspace-leaf-resize-handle {
+    height: calc(100% - var(--header-height));
+}
+
+/* set left and right sidebar toggle button colors */
+.fpp-colorful-frame .sidebar-toggle-button.sidebar-toggle-button {
+    background-color: var(--background-primary) !important;
+}
+
+/* macOS stuff, cant test */
+.fpp-colorful-frame.mod-macos .sidebar-toggle-button.mod-right {
+    border-radius: 0 0 0 var(--radius-m);
+}
+
+.fpp-colorful-frame.is-fullscreen:not(.is-popout-window) .sidebar-toggle-button.mod-left {
+    border-radius: 0 0 var(--radius-m) 0;
+}
+
+.mod-top .workspace-tab-header-inner::after {
+    display: none;
+}
+
+.fpp-colorful-frame.is-frameless:not(.is-hidden-frameless) .sidebar-toggle-button.mod-right,
+.fpp-colorful-frame.is-frameless:not(.is-hidden-frameless) .sidebar-toggle-button.mod-left {
+    border-radius: var(--radius-m);
+}
+
+.fpp-colorful-frame:not(.is-frameless) .sidebar-toggle-button.mod-right,
+.fpp-colorful-frame:not(.is-frameless) .sidebar-toggle-button.mod-left {
+    border-radius: var(--radius-m);
+}
+
+.workspace,
+.horizontal-main-container {
+    background-color: var(--tab-container-background);
+}
+
+/* inactive tab header background */
+.workspace .mod-root .workspace-tab-header:not(.is-active) {
+    background-color: rgba(var(--ctp-mantle), var(--anp-depth-tab-opacity, 0.2));
+}
+
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+    color: var(--color-accent);
+}
