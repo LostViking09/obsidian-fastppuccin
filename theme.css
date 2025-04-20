@@ -614,7 +614,7 @@ settings:
   }
 
   .style-settings-heading:is([data-id=fastppuccin-rainbow-folders-settings],
-  [data-id=anp-custom-rainbow-colors],) .setting-item-name {
+  [data-id=anp-custom-rainbow-colors],[data-id=fastppuccin-colorful-frame-settings]) .setting-item-name {
     color: rgb(var(--ctp-mauve));
   }
 
