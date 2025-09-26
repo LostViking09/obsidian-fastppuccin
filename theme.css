@@ -415,7 +415,7 @@ settings:
       default: true
   -
       id: colored-headers
-      title: Colored Headings (H1-H5)
+      title: Colored Headings (H1-H6)
       type: class-toggle
       default: true
   -
@@ -438,6 +438,302 @@ settings:
       title: Table Hover Transition effect
       type: class-toggle
       default: true
+
+  -
+      id: colored-headers-custom-colors
+      title: Colored Headings Custom Color Settings
+      description: Customize the colors used for colored headings.
+      type: heading
+      level: 2
+      collapsed: true
+  -
+      id: h1-color
+      title: H1 Color
+      type: class-select
+      default: anp-h1-red
+      options:
+      -
+          label: Rosewater
+          value: anp-h1-rosewater
+      -
+          label: Flamingo
+          value: anp-h1-flamingo
+      -
+          label: Pink
+          value: anp-h1-pink
+      -
+          label: Mauve
+          value: anp-h1-mauve
+      -
+          label: Red
+          value: anp-h1-red
+      -
+          label: Maroon
+          value: anp-h1-maroon
+      -
+          label: Peach
+          value: anp-h1-peach
+      -
+          label: Yellow
+          value: anp-h1-yellow
+      -
+          label: Green
+          value: anp-h1-green
+      -
+          label: Teal
+          value: anp-h1-teal
+      -
+          label: Sky
+          value: anp-h1-sky
+      -
+          label: Sapphire
+          value: anp-h1-sapphire
+      -
+          label: Blue
+          value: anp-h1-blue
+      -
+          label: Lavender
+          value: anp-h1-lavender
+  -
+      id: h2-color
+      title: H2 Color
+      type: class-select
+      default: anp-h2-peach
+      options:
+      -
+          label: Rosewater
+          value: anp-h2-rosewater
+      -
+          label: Flamingo
+          value: anp-h2-flamingo
+      -
+          label: Pink
+          value: anp-h2-pink
+      -
+          label: Mauve
+          value: anp-h2-mauve
+      -
+          label: Red
+          value: anp-h2-red
+      -
+          label: Maroon
+          value: anp-h2-maroon
+      -
+          label: Peach
+          value: anp-h2-peach
+      -
+          label: Yellow
+          value: anp-h2-yellow
+      -
+          label: Green
+          value: anp-h2-green
+      -
+          label: Teal
+          value: anp-h2-teal
+      -
+          label: Sky
+          value: anp-h2-sky
+      -
+          label: Sapphire
+          value: anp-h2-sapphire
+      -
+          label: Blue
+          value: anp-h2-blue
+      -
+          label: Lavender
+          value: anp-h2-lavender
+  -
+      id: h3-color
+      title: H3 Color
+      type: class-select
+      default: anp-h3-yellow
+      options:
+      -
+          label: Rosewater
+          value: anp-h3-rosewater
+      -
+          label: Flamingo
+          value: anp-h3-flamingo
+      -
+          label: Pink
+          value: anp-h3-pink
+      -
+          label: Mauve
+          value: anp-h3-mauve
+      -
+          label: Red
+          value: anp-h3-red
+      -
+          label: Maroon
+          value: anp-h3-maroon
+      -
+          label: Peach
+          value: anp-h3-peach
+      -
+          label: Yellow
+          value: anp-h3-yellow
+      -
+          label: Green
+          value: anp-h3-green
+      -
+          label: Teal
+          value: anp-h3-teal
+      -
+          label: Sky
+          value: anp-h3-sky
+      -
+          label: Sapphire
+          value: anp-h3-sapphire
+      -
+          label: Blue
+          value: anp-h3-blue
+      -
+          label: Lavender
+          value: anp-h3-lavender
+  -
+      id: h4-color
+      title: H4 Color
+      type: class-select
+      default: anp-h4-green
+      options:
+      -
+          label: Rosewater
+          value: anp-h4-rosewater
+      -
+          label: Flamingo
+          value: anp-h4-flamingo
+      -
+          label: Pink
+          value: anp-h4-pink
+      -
+          label: Mauve
+          value: anp-h4-mauve
+      -
+          label: Red
+          value: anp-h4-red
+      -
+          label: Maroon
+          value: anp-h4-maroon
+      -
+          label: Peach
+          value: anp-h4-peach
+      -
+          label: Yellow
+          value: anp-h4-yellow
+      -
+          label: Green
+          value: anp-h4-green
+      -
+          label: Teal
+          value: anp-h4-teal
+      -
+          label: Sky
+          value: anp-h4-sky
+      -
+          label: Sapphire
+          value: anp-h4-sapphire
+      -
+          label: Blue
+          value: anp-h4-blue
+      -
+          label: Lavender
+          value: anp-h4-lavender
+  -
+      id: h5-color
+      title: H5 Color
+      type: class-select
+      default: anp-h5-blue
+      options:
+      -
+          label: Rosewater
+          value: anp-h5-rosewater
+      -
+          label: Flamingo
+          value: anp-h5-flamingo
+      -
+          label: Pink
+          value: anp-h5-pink
+      -
+          label: Mauve
+          value: anp-h5-mauve
+      -
+          label: Red
+          value: anp-h5-red
+      -
+          label: Maroon
+          value: anp-h5-maroon
+      -
+          label: Peach
+          value: anp-h5-peach
+      -
+          label: Yellow
+          value: anp-h5-yellow
+      -
+          label: Green
+          value: anp-h5-green
+      -
+          label: Teal
+          value: anp-h5-teal
+      -
+          label: Sky
+          value: anp-h5-sky
+      -
+          label: Sapphire
+          value: anp-h5-sapphire
+      -
+          label: Blue
+          value: anp-h5-blue
+      -
+          label: Lavender
+          value: anp-h5-lavender
+  -
+      id: h6-color
+      title: H6 Color
+      type: class-select
+      default: anp-h6-mauve
+      options:
+      -
+          label: Rosewater
+          value: anp-h6-rosewater
+      -
+          label: Flamingo
+          value: anp-h6-flamingo
+      -
+          label: Pink
+          value: anp-h6-pink
+      -
+          label: Mauve
+          value: anp-h6-mauve
+      -
+          label: Red
+          value: anp-h6-red
+      -
+          label: Maroon
+          value: anp-h6-maroon
+      -
+          label: Peach
+          value: anp-h6-peach
+      -
+          label: Yellow
+          value: anp-h6-yellow
+      -
+          label: Green
+          value: anp-h6-green
+      -
+          label: Teal
+          value: anp-h6-teal
+      -
+          label: Sky
+          value: anp-h6-sky
+      -
+          label: Sapphire
+          value: anp-h6-sapphire
+      -
+          label: Blue
+          value: anp-h6-blue
+      -
+          label: Lavender
+          value: anp-h6-lavender
   -
   */
 
@@ -663,13 +959,350 @@ settings:
 
   /* Colored Headers */
   .colored-headers {
-    --h1-color: rgb(var(--ctp-red));
-    --h2-color: rgb(var(--ctp-peach));
-    --h3-color: rgb(var(--ctp-green));
-    --h4-color: rgb(var(--ctp-teal));
-    --h5-color: rgb(var(--ctp-lavender));
-    --h6-color: rgb(var(--ctp-mauve));
+    --h1-color: rgb(var(--anp-h1-color));
+    --h2-color: rgb(var(--anp-h2-color));
+    --h3-color: rgb(var(--anp-h3-color));
+    --h4-color: rgb(var(--anp-h4-color));
+    --h5-color: rgb(var(--anp-h5-color));
+    --h6-color: rgb(var(--anp-h6-color));
   }
+
+/*------------------ Custom Headers -------------------*/
+.anp-h1-rosewater {
+  --anp-h1-color: var(--ctp-rosewater);
+}
+
+.anp-h1-flamingo {
+  --anp-h1-color: var(--ctp-flamingo);
+}
+
+.anp-h1-pink {
+  --anp-h1-color: var(--ctp-pink);
+}
+
+.anp-h1-mauve {
+  --anp-h1-color: var(--ctp-mauve);
+}
+
+.anp-h1-red {
+  --anp-h1-color: var(--ctp-red);
+}
+
+.anp-h1-maroon {
+  --anp-h1-color: var(--ctp-maroon);
+}
+
+.anp-h1-peach {
+  --anp-h1-color: var(--ctp-peach);
+}
+
+.anp-h1-yellow {
+  --anp-h1-color: var(--ctp-yellow);
+}
+
+.anp-h1-green {
+  --anp-h1-color: var(--ctp-green);
+}
+
+.anp-h1-teal {
+  --anp-h1-color: var(--ctp-teal);
+}
+
+.anp-h1-sky {
+  --anp-h1-color: var(--ctp-sky);
+}
+
+.anp-h1-sapphire {
+  --anp-h1-color: var(--ctp-sapphire);
+}
+
+.anp-h1-blue {
+  --anp-h1-color: var(--ctp-blue);
+}
+
+.anp-h1-lavender {
+  --anp-h1-color: var(--ctp-lavender);
+}
+
+.anp-h2-rosewater {
+  --anp-h2-color: var(--ctp-rosewater);
+}
+
+.anp-h2-flamingo {
+  --anp-h2-color: var(--ctp-flamingo);
+}
+
+.anp-h2-pink {
+  --anp-h2-color: var(--ctp-pink);
+}
+
+.anp-h2-mauve {
+  --anp-h2-color: var(--ctp-mauve);
+}
+
+.anp-h2-red {
+  --anp-h2-color: var(--ctp-red);
+}
+
+.anp-h2-maroon {
+  --anp-h2-color: var(--ctp-maroon);
+}
+
+.anp-h2-peach {
+  --anp-h2-color: var(--ctp-peach);
+}
+
+.anp-h2-yellow {
+  --anp-h2-color: var(--ctp-yellow);
+}
+
+.anp-h2-green {
+  --anp-h2-color: var(--ctp-green);
+}
+
+.anp-h2-teal {
+  --anp-h2-color: var(--ctp-teal);
+}
+
+.anp-h2-sky {
+  --anp-h2-color: var(--ctp-sky);
+}
+
+.anp-h2-sapphire {
+  --anp-h2-color: var(--ctp-sapphire);
+}
+
+.anp-h2-blue {
+  --anp-h2-color: var(--ctp-blue);
+}
+
+.anp-h2-lavender {
+  --anp-h2-color: var(--ctp-lavender);
+}
+
+.anp-h3-rosewater {
+  --anp-h3-color: var(--ctp-rosewater);
+}
+
+.anp-h3-flamingo {
+  --anp-h3-color: var(--ctp-flamingo);
+}
+
+.anp-h3-pink {
+  --anp-h3-color: var(--ctp-pink);
+}
+
+.anp-h3-mauve {
+  --anp-h3-color: var(--ctp-mauve);
+}
+
+.anp-h3-red {
+  --anp-h3-color: var(--ctp-red);
+}
+
+.anp-h3-maroon {
+  --anp-h3-color: var(--ctp-maroon);
+}
+
+.anp-h3-peach {
+  --anp-h3-color: var(--ctp-peach);
+}
+
+.anp-h3-yellow {
+  --anp-h3-color: var(--ctp-yellow);
+}
+
+.anp-h3-green {
+  --anp-h3-color: var(--ctp-green);
+}
+
+.anp-h3-teal {
+  --anp-h3-color: var(--ctp-teal);
+}
+
+.anp-h3-sky {
+  --anp-h3-color: var(--ctp-sky);
+}
+
+.anp-h3-sapphire {
+  --anp-h3-color: var(--ctp-sapphire);
+}
+
+.anp-h3-blue {
+  --anp-h3-color: var(--ctp-blue);
+}
+
+.anp-h3-lavender {
+  --anp-h3-color: var(--ctp-lavender);
+}
+
+.anp-h4-rosewater {
+  --anp-h4-color: var(--ctp-rosewater);
+}
+
+.anp-h4-flamingo {
+  --anp-h4-color: var(--ctp-flamingo);
+}
+
+.anp-h4-pink {
+  --anp-h4-color: var(--ctp-pink);
+}
+
+.anp-h4-mauve {
+  --anp-h4-color: var(--ctp-mauve);
+}
+
+.anp-h4-red {
+  --anp-h4-color: var(--ctp-red);
+}
+
+.anp-h4-maroon {
+  --anp-h4-color: var(--ctp-maroon);
+}
+
+.anp-h4-peach {
+  --anp-h4-color: var(--ctp-peach);
+}
+
+.anp-h4-yellow {
+  --anp-h4-color: var(--ctp-yellow);
+}
+
+.anp-h4-green {
+  --anp-h4-color: var(--ctp-green);
+}
+
+.anp-h4-teal {
+  --anp-h4-color: var(--ctp-teal);
+}
+
+.anp-h4-sky {
+  --anp-h4-color: var(--ctp-sky);
+}
+
+.anp-h4-sapphire {
+  --anp-h4-color: var(--ctp-sapphire);
+}
+
+.anp-h4-blue {
+  --anp-h4-color: var(--ctp-blue);
+}
+
+.anp-h4-lavender {
+  --anp-h4-color: var(--ctp-lavender);
+}
+
+.anp-h5-rosewater {
+  --anp-h5-color: var(--ctp-rosewater);
+}
+
+.anp-h5-flamingo {
+  --anp-h5-color: var(--ctp-flamingo);
+}
+
+.anp-h5-pink {
+  --anp-h5-color: var(--ctp-pink);
+}
+
+.anp-h5-mauve {
+  --anp-h5-color: var(--ctp-mauve);
+}
+
+.anp-h5-red {
+  --anp-h5-color: var(--ctp-red);
+}
+
+.anp-h5-maroon {
+  --anp-h5-color: var(--ctp-maroon);
+}
+
+.anp-h5-peach {
+  --anp-h5-color: var(--ctp-peach);
+}
+
+.anp-h5-yellow {
+  --anp-h5-color: var(--ctp-yellow);
+}
+
+.anp-h5-green {
+  --anp-h5-color: var(--ctp-green);
+}
+
+.anp-h5-teal {
+  --anp-h5-color: var(--ctp-teal);
+}
+
+.anp-h5-sky {
+  --anp-h5-color: var(--ctp-sky);
+}
+
+.anp-h5-sapphire {
+  --anp-h5-color: var(--ctp-sapphire);
+}
+
+.anp-h5-blue {
+  --anp-h5-color: var(--ctp-blue);
+}
+
+.anp-h5-lavender {
+  --anp-h5-color: var(--ctp-lavender);
+}
+
+.anp-h6-rosewater {
+  --anp-h6-color: var(--ctp-rosewater);
+}
+
+.anp-h6-flamingo {
+  --anp-h6-color: var(--ctp-flamingo);
+}
+
+.anp-h6-pink {
+  --anp-h6-color: var(--ctp-pink);
+}
+
+.anp-h6-mauve {
+  --anp-h6-color: var(--ctp-mauve);
+}
+
+.anp-h6-red {
+  --anp-h6-color: var(--ctp-red);
+}
+
+.anp-h6-maroon {
+  --anp-h6-color: var(--ctp-maroon);
+}
+
+.anp-h6-peach {
+  --anp-h6-color: var(--ctp-peach);
+}
+
+.anp-h6-yellow {
+  --anp-h6-color: var(--ctp-yellow);
+}
+
+.anp-h6-green {
+  --anp-h6-color: var(--ctp-green);
+}
+
+.anp-h6-teal {
+  --anp-h6-color: var(--ctp-teal);
+}
+
+.anp-h6-sky {
+  --anp-h6-color: var(--ctp-sky);
+}
+
+.anp-h6-sapphire {
+  --anp-h6-color: var(--ctp-sapphire);
+}
+
+.anp-h6-blue {
+  --anp-h6-color: var(--ctp-blue);
+}
+
+.anp-h6-lavender {
+  --anp-h6-color: var(--ctp-lavender);
+}
 
 /*------------------ Custom Accents -------------------*/
 .ctp-accent-rosewater {
