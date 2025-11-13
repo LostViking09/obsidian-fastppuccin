@@ -1204,6 +1204,11 @@ settings:
     background-color: var(--background-primary);
   }
 
+  /* Light theme message text color fix */
+  .notice {
+    color: var(--text-normal);
+  }
+
   /* Callouts */
 
   .callout,
