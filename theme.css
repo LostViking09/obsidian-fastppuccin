@@ -1199,6 +1199,11 @@ settings:
     --ctp-crust: var(--ctp-ext-crust, 220, 224, 232);
   }
 
+  /* Slider checkboxes for Style Settings */
+  .checkbox-container.is-enabled:after {
+    background-color: var(--background-primary);
+  }
+
   /* Callouts */
 
   .callout,
