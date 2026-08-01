@@ -1250,7 +1250,7 @@ settings:
   }
   .callout[data-callout="quote"],
   .callout[data-callout="cite"] {
-    --callout-color: 158, 158, 158;
+    --callout-color: rgb(158, 158, 158);
   }
 
   /* Inline title styling */
