@@ -1214,7 +1214,7 @@ settings:
   .callout,
   .callout[data-callout="todo"],
   .callout[data-callout="todo"] {
-    --callout-color: var(--ctp-blue);
+    --callout-color: rgb(var(--ctp-blue));
   }
   .callout[data-callout="abstract"],
   .callout[data-callout="summary"],
@@ -1222,12 +1222,12 @@ settings:
   .callout[data-callout="important"],
   .callout[data-callout="tip"],
   .callout[data-callout="hint"] {
-    --callout-color: var(--ctp-sky);
+    --callout-color: rgb(var(--ctp-sky));
   }
   .callout[data-callout="success"],
   .callout[data-callout="check"],
   .callout[data-callout="done"] {
-    --callout-color: var(--ctp-green);
+    --callout-color: rgb(var(--ctp-green));
   }
   .callout[data-callout="question"],
   .callout[data-callout="help"],
@@ -1235,7 +1235,7 @@ settings:
   .callout[data-callout="warning"],
   .callout[data-callout="caution"],
   .callout[data-callout="attention"] {
-    --callout-color: var(--ctp-peach);
+    --callout-color: rgb(var(--ctp-peach));
   }
   .callout[data-callout="failure"],
   .callout[data-callout="fail"],
@@ -1243,14 +1243,14 @@ settings:
   .callout[data-callout="danger"],
   .callout[data-callout="error"],
   .callout[data-callout="bug"] {
-    --callout-color: var(--ctp-red);
+    --callout-color: rgb(var(--ctp-red));
   }
   .callout[data-callout="example"] {
-    --callout-color: var(--ctp-lavender);
+    --callout-color: rgb(var(--ctp-lavender));
   }
   .callout[data-callout="quote"],
   .callout[data-callout="cite"] {
-    --callout-color: 158, 158, 158;
+    --callout-color: rgb(158, 158, 158);
   }
 
   /* Inline title styling */
