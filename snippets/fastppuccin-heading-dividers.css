@@ -1,0 +1,117 @@
+/*===============================================================
+                    FastPpuccin Heading Dividers Snippet
+                            -----------
+
+  This snippet adds a divider line below headings.
+  Customizable via the StyleSettings plugin.
+  Inspired by the AnuPpuccin theme.
+
+  *===============================================================*/
+
+/* @settings
+
+name: FastPpuccin Heading Dividers
+id: fastppuccin-heading-dividers-settings
+settings:
+    - 
+        id: about-info-text-fpp-heading-dividers
+        title: About this snippet 
+        description: "Adds customizable dividers below headings. Based on the feature from the AnuPpuccin theme."
+        type: info-text
+        markdown: true
+    -
+        id: fpp-heading-divider-color-toggle
+        title: Match divider color with heading text color
+        description: "If enabled, the divider line will use the same color as the heading text instead of the default border color."
+        type: class-toggle 
+    -
+        id: fpp-h1-divider
+        title: Enable H1 Divider
+        type: class-toggle
+    -
+        id: fpp-h2-divider
+        title: Enable H2 Divider
+        type: class-toggle
+    -
+        id: fpp-h3-divider
+        title: Enable H3 Divider
+        type: class-toggle
+    -
+        id: fpp-h4-divider
+        title: Enable H4 Divider
+        type: class-toggle
+    -
+        id: fpp-h5-divider
+        title: Enable H5 Divider
+        type: class-toggle
+    -
+        id: fpp-h6-divider
+        title: Enable H6 Divider
+        type: class-toggle
+*/
+
+/* H1 Divider */
+.fpp-h1-divider .markdown-rendered h1,
+.fpp-h1-divider .HyperMD-header-1 {
+  border-bottom: var(--hr-thickness, 2px) solid var(--background-modifier-border);
+  padding-bottom: 2px;
+}
+.fpp-h1-divider.fpp-heading-divider-color-toggle .markdown-rendered h1,
+.fpp-h1-divider.fpp-heading-divider-color-toggle .HyperMD-header-1 {
+  border-bottom-color: currentColor;
+}
+
+/* H2 Divider */
+.fpp-h2-divider .markdown-rendered h2,
+.fpp-h2-divider .HyperMD-header-2 {
+  border-bottom: var(--hr-thickness, 2px) solid var(--background-modifier-border);
+  padding-bottom: 2px;
+}
+.fpp-h2-divider.fpp-heading-divider-color-toggle .markdown-rendered h2,
+.fpp-h2-divider.fpp-heading-divider-color-toggle .HyperMD-header-2 {
+  border-bottom-color: currentColor;
+}
+
+/* H3 Divider */
+.fpp-h3-divider .markdown-rendered h3,
+.fpp-h3-divider .HyperMD-header-3 {
+  border-bottom: var(--hr-thickness, 2px) solid var(--background-modifier-border);
+  padding-bottom: 2px;
+}
+.fpp-h3-divider.fpp-heading-divider-color-toggle .markdown-rendered h3,
+.fpp-h3-divider.fpp-heading-divider-color-toggle .HyperMD-header-3 {
+  border-bottom-color: currentColor;
+}
+
+/* H4 Divider */
+.fpp-h4-divider .markdown-rendered h4,
+.fpp-h4-divider .HyperMD-header-4 {
+  border-bottom: var(--hr-thickness, 2px) solid var(--background-modifier-border);
+  padding-bottom: 2px;
+}
+.fpp-h4-divider.fpp-heading-divider-color-toggle .markdown-rendered h4,
+.fpp-h4-divider.fpp-heading-divider-color-toggle .HyperMD-header-4 {
+  border-bottom-color: currentColor;
+}
+
+/* H5 Divider */
+.fpp-h5-divider .markdown-rendered h5,
+.fpp-h5-divider .HyperMD-header-5 {
+  border-bottom: var(--hr-thickness, 2px) solid var(--background-modifier-border);
+  padding-bottom: 2px;
+}
+.fpp-h5-divider.fpp-heading-divider-color-toggle .markdown-rendered h5,
+.fpp-h5-divider.fpp-heading-divider-color-toggle .HyperMD-header-5 {
+  border-bottom-color: currentColor;
+}
+
+/* H6 Divider */
+.fpp-h6-divider .markdown-rendered h6,
+.fpp-h6-divider .HyperMD-header-6 {
+  border-bottom: var(--hr-thickness, 2px) solid var(--background-modifier-border);
+  padding-bottom: 2px;
+}
+.fpp-h6-divider.fpp-heading-divider-color-toggle .markdown-rendered h6,
+.fpp-h6-divider.fpp-heading-divider-color-toggle .HyperMD-header-6 {
+  border-bottom-color: currentColor;
+}
