@@ -1,0 +1,424 @@
+/* @settings
+name: Fastppuccin - Separate Light/Dark Decoration Colors
+id: anp-separate-decoration-colors
+settings:
+  -
+    id: anp-separate-decor-info
+    title: Requirements
+    description: "You must first turn on **Enable Decoration Colors** in the main FastPpuccin Theme Settings for these overrides to take effect!"
+    type: info-text
+    markdown: true
+  -
+    id: anp-separate-decor-toggle
+    title: Enable Separate Light/Dark Colors
+    type: class-toggle
+  -
+    id: anp-light-mode-heading
+    title: Light Mode Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: anp-light-bold-custom
+    title: Light Mode Bold Color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+    -
+      label: None
+      value: none
+    -
+      label: Rosewater
+      value: anp-light-bold-rosewater
+    -
+      label: Flamingo
+      value: anp-light-bold-flamingo
+    -
+      label: Pink
+      value: anp-light-bold-pink
+    -
+      label: Mauve
+      value: anp-light-bold-mauve
+    -
+      label: Red
+      value: anp-light-bold-red
+    -
+      label: Maroon
+      value: anp-light-bold-maroon
+    -
+      label: Peach
+      value: anp-light-bold-peach
+    -
+      label: Yellow
+      value: anp-light-bold-yellow
+    -
+      label: Green
+      value: anp-light-bold-green
+    -
+      label: Teal
+      value: anp-light-bold-teal
+    -
+      label: Sky
+      value: anp-light-bold-sky
+    -
+      label: Sapphire
+      value: anp-light-bold-sapphire
+    -
+      label: Blue
+      value: anp-light-bold-blue
+    -
+      label: Lavender
+      value: anp-light-bold-lavender
+  -
+    id: anp-light-italic-custom
+    title: Light Mode Italic Color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+    -
+      label: None
+      value: none
+    -
+      label: Rosewater
+      value: anp-light-italic-rosewater
+    -
+      label: Flamingo
+      value: anp-light-italic-flamingo
+    -
+      label: Pink
+      value: anp-light-italic-pink
+    -
+      label: Mauve
+      value: anp-light-italic-mauve
+    -
+      label: Red
+      value: anp-light-italic-red
+    -
+      label: Maroon
+      value: anp-light-italic-maroon
+    -
+      label: Peach
+      value: anp-light-italic-peach
+    -
+      label: Yellow
+      value: anp-light-italic-yellow
+    -
+      label: Green
+      value: anp-light-italic-green
+    -
+      label: Teal
+      value: anp-light-italic-teal
+    -
+      label: Sky
+      value: anp-light-italic-sky
+    -
+      label: Sapphire
+      value: anp-light-italic-sapphire
+    -
+      label: Blue
+      value: anp-light-italic-blue
+    -
+      label: Lavender
+      value: anp-light-italic-lavender
+  -
+    id: anp-light-highlight-custom
+    title: Light Mode Highlight Color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+    -
+      label: None
+      value: none
+    -
+      label: Rosewater
+      value: anp-light-highlight-rosewater
+    -
+      label: Flamingo
+      value: anp-light-highlight-flamingo
+    -
+      label: Pink
+      value: anp-light-highlight-pink
+    -
+      label: Mauve
+      value: anp-light-highlight-mauve
+    -
+      label: Red
+      value: anp-light-highlight-red
+    -
+      label: Maroon
+      value: anp-light-highlight-maroon
+    -
+      label: Peach
+      value: anp-light-highlight-peach
+    -
+      label: Yellow
+      value: anp-light-highlight-yellow
+    -
+      label: Green
+      value: anp-light-highlight-green
+    -
+      label: Teal
+      value: anp-light-highlight-teal
+    -
+      label: Sky
+      value: anp-light-highlight-sky
+    -
+      label: Sapphire
+      value: anp-light-highlight-sapphire
+    -
+      label: Blue
+      value: anp-light-highlight-blue
+    -
+      label: Lavender
+      value: anp-light-highlight-lavender
+  -
+    id: anp-dark-mode-heading
+    title: Dark Mode Colors
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: anp-dark-bold-custom
+    title: Dark Mode Bold Color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+    -
+      label: None
+      value: none
+    -
+      label: Rosewater
+      value: anp-dark-bold-rosewater
+    -
+      label: Flamingo
+      value: anp-dark-bold-flamingo
+    -
+      label: Pink
+      value: anp-dark-bold-pink
+    -
+      label: Mauve
+      value: anp-dark-bold-mauve
+    -
+      label: Red
+      value: anp-dark-bold-red
+    -
+      label: Maroon
+      value: anp-dark-bold-maroon
+    -
+      label: Peach
+      value: anp-dark-bold-peach
+    -
+      label: Yellow
+      value: anp-dark-bold-yellow
+    -
+      label: Green
+      value: anp-dark-bold-green
+    -
+      label: Teal
+      value: anp-dark-bold-teal
+    -
+      label: Sky
+      value: anp-dark-bold-sky
+    -
+      label: Sapphire
+      value: anp-dark-bold-sapphire
+    -
+      label: Blue
+      value: anp-dark-bold-blue
+    -
+      label: Lavender
+      value: anp-dark-bold-lavender
+  -
+    id: anp-dark-italic-custom
+    title: Dark Mode Italic Color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+    -
+      label: None
+      value: none
+    -
+      label: Rosewater
+      value: anp-dark-italic-rosewater
+    -
+      label: Flamingo
+      value: anp-dark-italic-flamingo
+    -
+      label: Pink
+      value: anp-dark-italic-pink
+    -
+      label: Mauve
+      value: anp-dark-italic-mauve
+    -
+      label: Red
+      value: anp-dark-italic-red
+    -
+      label: Maroon
+      value: anp-dark-italic-maroon
+    -
+      label: Peach
+      value: anp-dark-italic-peach
+    -
+      label: Yellow
+      value: anp-dark-italic-yellow
+    -
+      label: Green
+      value: anp-dark-italic-green
+    -
+      label: Teal
+      value: anp-dark-italic-teal
+    -
+      label: Sky
+      value: anp-dark-italic-sky
+    -
+      label: Sapphire
+      value: anp-dark-italic-sapphire
+    -
+      label: Blue
+      value: anp-dark-italic-blue
+    -
+      label: Lavender
+      value: anp-dark-italic-lavender
+  -
+    id: anp-dark-highlight-custom
+    title: Dark Mode Highlight Color
+    type: class-select
+    allowEmpty: true
+    default: none
+    options:
+    -
+      label: None
+      value: none
+    -
+      label: Rosewater
+      value: anp-dark-highlight-rosewater
+    -
+      label: Flamingo
+      value: anp-dark-highlight-flamingo
+    -
+      label: Pink
+      value: anp-dark-highlight-pink
+    -
+      label: Mauve
+      value: anp-dark-highlight-mauve
+    -
+      label: Red
+      value: anp-dark-highlight-red
+    -
+      label: Maroon
+      value: anp-dark-highlight-maroon
+    -
+      label: Peach
+      value: anp-dark-highlight-peach
+    -
+      label: Yellow
+      value: anp-dark-highlight-yellow
+    -
+      label: Green
+      value: anp-dark-highlight-green
+    -
+      label: Teal
+      value: anp-dark-highlight-teal
+    -
+      label: Sky
+      value: anp-dark-highlight-sky
+    -
+      label: Sapphire
+      value: anp-dark-highlight-sapphire
+    -
+      label: Blue
+      value: anp-dark-highlight-blue
+    -
+      label: Lavender
+      value: anp-dark-highlight-lavender
+*/
+
+.theme-light.anp-separate-decor-toggle.anp-light-bold-rosewater { --anp-bold-color: var(--ctp-rosewater) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-rosewater { --anp-bold-color: var(--ctp-rosewater) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-flamingo { --anp-bold-color: var(--ctp-flamingo) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-flamingo { --anp-bold-color: var(--ctp-flamingo) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-pink { --anp-bold-color: var(--ctp-pink) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-pink { --anp-bold-color: var(--ctp-pink) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-mauve { --anp-bold-color: var(--ctp-mauve) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-mauve { --anp-bold-color: var(--ctp-mauve) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-red { --anp-bold-color: var(--ctp-red) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-red { --anp-bold-color: var(--ctp-red) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-maroon { --anp-bold-color: var(--ctp-maroon) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-maroon { --anp-bold-color: var(--ctp-maroon) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-peach { --anp-bold-color: var(--ctp-peach) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-peach { --anp-bold-color: var(--ctp-peach) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-yellow { --anp-bold-color: var(--ctp-yellow) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-yellow { --anp-bold-color: var(--ctp-yellow) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-green { --anp-bold-color: var(--ctp-green) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-green { --anp-bold-color: var(--ctp-green) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-teal { --anp-bold-color: var(--ctp-teal) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-teal { --anp-bold-color: var(--ctp-teal) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-sky { --anp-bold-color: var(--ctp-sky) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-sky { --anp-bold-color: var(--ctp-sky) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-sapphire { --anp-bold-color: var(--ctp-sapphire) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-sapphire { --anp-bold-color: var(--ctp-sapphire) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-blue { --anp-bold-color: var(--ctp-blue) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-blue { --anp-bold-color: var(--ctp-blue) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-bold-lavender { --anp-bold-color: var(--ctp-lavender) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-bold-lavender { --anp-bold-color: var(--ctp-lavender) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-rosewater { --anp-italic-color: var(--ctp-rosewater) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-rosewater { --anp-italic-color: var(--ctp-rosewater) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-flamingo { --anp-italic-color: var(--ctp-flamingo) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-flamingo { --anp-italic-color: var(--ctp-flamingo) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-pink { --anp-italic-color: var(--ctp-pink) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-pink { --anp-italic-color: var(--ctp-pink) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-mauve { --anp-italic-color: var(--ctp-mauve) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-mauve { --anp-italic-color: var(--ctp-mauve) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-red { --anp-italic-color: var(--ctp-red) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-red { --anp-italic-color: var(--ctp-red) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-maroon { --anp-italic-color: var(--ctp-maroon) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-maroon { --anp-italic-color: var(--ctp-maroon) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-peach { --anp-italic-color: var(--ctp-peach) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-peach { --anp-italic-color: var(--ctp-peach) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-yellow { --anp-italic-color: var(--ctp-yellow) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-yellow { --anp-italic-color: var(--ctp-yellow) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-green { --anp-italic-color: var(--ctp-green) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-green { --anp-italic-color: var(--ctp-green) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-teal { --anp-italic-color: var(--ctp-teal) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-teal { --anp-italic-color: var(--ctp-teal) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-sky { --anp-italic-color: var(--ctp-sky) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-sky { --anp-italic-color: var(--ctp-sky) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-sapphire { --anp-italic-color: var(--ctp-sapphire) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-sapphire { --anp-italic-color: var(--ctp-sapphire) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-blue { --anp-italic-color: var(--ctp-blue) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-blue { --anp-italic-color: var(--ctp-blue) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-italic-lavender { --anp-italic-color: var(--ctp-lavender) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-italic-lavender { --anp-italic-color: var(--ctp-lavender) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-rosewater { --anp-highlight-color: var(--ctp-rosewater) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-rosewater { --anp-highlight-color: var(--ctp-rosewater) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-flamingo { --anp-highlight-color: var(--ctp-flamingo) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-flamingo { --anp-highlight-color: var(--ctp-flamingo) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-pink { --anp-highlight-color: var(--ctp-pink) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-pink { --anp-highlight-color: var(--ctp-pink) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-mauve { --anp-highlight-color: var(--ctp-mauve) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-mauve { --anp-highlight-color: var(--ctp-mauve) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-red { --anp-highlight-color: var(--ctp-red) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-red { --anp-highlight-color: var(--ctp-red) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-maroon { --anp-highlight-color: var(--ctp-maroon) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-maroon { --anp-highlight-color: var(--ctp-maroon) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-peach { --anp-highlight-color: var(--ctp-peach) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-peach { --anp-highlight-color: var(--ctp-peach) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-yellow { --anp-highlight-color: var(--ctp-yellow) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-yellow { --anp-highlight-color: var(--ctp-yellow) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-green { --anp-highlight-color: var(--ctp-green) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-green { --anp-highlight-color: var(--ctp-green) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-teal { --anp-highlight-color: var(--ctp-teal) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-teal { --anp-highlight-color: var(--ctp-teal) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-sky { --anp-highlight-color: var(--ctp-sky) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-sky { --anp-highlight-color: var(--ctp-sky) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-sapphire { --anp-highlight-color: var(--ctp-sapphire) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-sapphire { --anp-highlight-color: var(--ctp-sapphire) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-blue { --anp-highlight-color: var(--ctp-blue) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-blue { --anp-highlight-color: var(--ctp-blue) !important; }
+.theme-light.anp-separate-decor-toggle.anp-light-highlight-lavender { --anp-highlight-color: var(--ctp-lavender) !important; }
+.theme-dark.anp-separate-decor-toggle.anp-dark-highlight-lavender { --anp-highlight-color: var(--ctp-lavender) !important; }
